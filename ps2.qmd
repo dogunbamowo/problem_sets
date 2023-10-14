@@ -50,13 +50,16 @@ And see if you can figure out what range the likert scores are in. What's the hi
 
 ```{r}
 ## your code here
+  
+d %>% 
+  select(Game1Angry1) %>%
+  range(na.rm = TRUE)
 
-range(d$Game1Angry1, na.rm = TRUE)
 
 ```
 
-Highest number: 1
-Lowest number: 7
+Highest number: 7
+Lowest number: 1
 
 # cleaning up a bit
 
